@@ -1,0 +1,31 @@
+.project-brief-form .brief-option-group{min-width:0;margin:0 0 19px;clear:both}
+.project-brief-form .brief-option-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px;color:#f2f8ff}
+.project-brief-form .brief-option-heading>span{font-size:12px;font-weight:800}
+.project-brief-form .brief-option-heading>small{font-size:10px;color:#a9bdd8;white-space:nowrap}
+.project-brief-form .brief-option-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.project-brief-form .brief-option-group-project .brief-option-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.project-brief-form .brief-option-group-contact{margin:23px 0 0}
+.project-brief-form .brief-option-group-contact .brief-option-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.project-brief-form .brief-option-card{position:relative;display:flex;align-items:center;gap:10px;min-width:0;min-height:59px;margin:0!important;padding:9px 11px;border:1px solid #5a7196;background:#172c4b;color:#ecf5ff;text-align:right;cursor:pointer;transition:border-color .18s,background .18s,box-shadow .18s,transform .18s}
+.project-brief-form .brief-option-card:hover{border-color:#8ac4ef;background:#203b60;transform:translateY(-2px)}
+.project-brief-form .brief-option-card.selected{border-color:#27e6f5;background:linear-gradient(135deg,#1d4868,#283664);box-shadow:inset 3px 0 0 #ff66ac,0 0 0 1px #27e6f533}
+.project-brief-form .brief-option-card:has(input:focus-visible){outline:3px solid #62f5a5;outline-offset:2px}
+.project-brief-form .brief-option-card input[type="radio"]{position:absolute;width:1px;height:1px;min-height:0;opacity:0;padding:0;margin:0;pointer-events:none}
+.project-brief-form .brief-option-marker{display:grid;place-items:center;flex:none;width:31px;height:31px;border:1px solid #617ea4;color:#9bb9db;font:700 10px/1 Consolas,monospace;direction:ltr}
+.project-brief-form .brief-option-card.selected .brief-option-marker{border-color:#27e6f5;color:#27e6f5;background:#122f4a}
+.project-brief-form .brief-option-text{display:flex;flex:1;flex-direction:column;align-items:flex-start;min-width:0;line-height:1.45}
+.project-brief-form .brief-option-text strong{font-size:11px;font-weight:750}
+.project-brief-form .brief-option-card .brief-option-text small{font-size:9px;color:#abc0de;font-weight:400}
+.project-brief-form .brief-option-check{flex:none;color:#62f5a5;opacity:0}
+.project-brief-form .brief-option-card.selected .brief-option-check{opacity:1}
+.project-brief-form .brief-business-fields{margin-top:18px}
+.project-brief-form .brief-picker-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px;margin:0 0 5px;clear:both;min-width:0;width:100%}
+.project-brief-form .brief-live-summary{display:flex;align-items:center;flex-wrap:wrap;gap:7px 13px;margin:4px 0 18px;padding:11px 13px;border:1px solid #627eb1;background:linear-gradient(90deg,#263f6c,#1c3457);color:#d5eaff}
+.project-brief-form .brief-live-summary>span{font-size:10px;color:#62f5a5}
+.project-brief-form .brief-live-summary strong{font-size:11px;font-weight:800}
+.project-brief-form .brief-live-summary small{font-size:10px;color:#b8cce5}
+@media(min-width:900px){.project-brief-form .brief-group .brief-business-fields{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1050px){.project-brief-form .brief-option-group-project .brief-option-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.project-brief-form .brief-picker-grid{grid-template-columns:1fr}.project-brief-form .brief-option-group-contact .brief-option-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.project-brief-form .brief-option-card{min-height:57px;padding:7px;gap:7px}.project-brief-form .brief-option-marker{width:26px;height:27px;font-size:9px}.project-brief-form .brief-option-text strong{font-size:11px}.project-brief-form .brief-option-card .brief-option-text small{font-size:9px}.project-brief-form .brief-option-check{width:12px}.project-brief-form .brief-option-heading>small{display:none}}
+@media(max-width:360px){.project-brief-form .brief-option-grid,.project-brief-form .brief-option-group-project .brief-option-grid,.project-brief-form .brief-option-group-contact .brief-option-grid{grid-template-columns:1fr}}

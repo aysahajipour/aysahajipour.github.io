@@ -45,9 +45,9 @@ export default function PixelCursor() {
       y += (targetY - y) * .32;
       opacity += ((active ? 1 : 0) - opacity) * .19;
       const now = performance.now();
-      while (trail.length && now - trail[0].time > 340) trail.shift();
-      const pitch = 13;
-      const radius = 104;
+      while (trail.length && now - trail[0].time > 240) trail.shift();
+      const pitch = 11;
+      const radius = 72;
       const startX = Math.floor((x - radius) / pitch) * pitch;
       const startY = Math.floor((y - radius) / pitch) * pitch;
       ctx.fillStyle = color;
@@ -59,22 +59,22 @@ export default function PixelCursor() {
           const distance = Math.hypot(px - x, py - y);
           const variation = .76 + noise(column, row) * .38;
           const closeness = Math.max(0, 1 - distance / (radius * variation));
-          if (!closeness || noise(column + 17, row - 9) > .26 + closeness * .74) continue;
-          const size = 1 + 8.8 * Math.pow(closeness, 1.4);
-          ctx.globalAlpha = opacity * (.07 + .58 * closeness);
-          ctx.shadowBlur = closeness > .68 ? 8 : 0;
+          if (!closeness || noise(column + 17, row - 9) > .22 + closeness * .68) continue;
+          const size = .8 + 5.5 * Math.pow(closeness, 1.5);
+          ctx.globalAlpha = opacity * (.05 + .45 * closeness);
+          ctx.shadowBlur = closeness > .75 ? 5 : 0;
           ctx.fillRect(Math.round(px - size / 2), Math.round(py - size / 2), size, size);
         }
       }
       ctx.shadowBlur = 0;
       trail.forEach((point, index) => {
-        const life = 1 - (now - point.time) / 340;
+        const life = 1 - (now - point.time) / 240;
         if (life <= 0) return;
-        for (let pixel = 0; pixel < 3; pixel++) {
-          const offsetX = (noise(index + pixel * 7, 3) - .5) * 27;
-          const offsetY = (noise(index + pixel * 11, 8) - .5) * 27;
-          const size = 1.2 + life * (2 + noise(index, pixel) * 2);
-          ctx.globalAlpha = opacity * life * .24;
+        for (let pixel = 0; pixel < 2; pixel++) {
+          const offsetX = (noise(index + pixel * 7, 3) - .5) * 20;
+          const offsetY = (noise(index + pixel * 11, 8) - .5) * 20;
+          const size = .8 + life * (1.5 + noise(index, pixel));
+          ctx.globalAlpha = opacity * life * .16;
           ctx.fillRect(Math.round(point.x + offsetX), Math.round(point.y + offsetY), size, size);
         }
       });
@@ -91,9 +91,9 @@ export default function PixelCursor() {
       targetY = event.clientY;
       if (!active) { x = targetX; y = targetY; }
       const last = trail[trail.length - 1];
-      if (!last || Math.hypot(targetX - last.x, targetY - last.y) > 16) {
+      if (!last || Math.hypot(targetX - last.x, targetY - last.y) > 20) {
         trail.push({ x: targetX, y: targetY, time: performance.now() });
-        if (trail.length > 18) trail.shift();
+        if (trail.length > 9) trail.shift();
       }
       active = true;
       start();
