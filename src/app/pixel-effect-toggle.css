@@ -1,0 +1,11 @@
+.pixel-effect-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:8px 11px;border:1px solid #607eaf;background:#172943;color:#dcecff;font:650 11px "Vazirmatn Variable",Tahoma,sans-serif;white-space:nowrap;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.pixel-effect-toggle:hover{border-color:#27e6f5;background:#234265}
+.pixel-effect-toggle:focus-visible{outline:2px solid #27e6f5;outline-offset:3px}
+.pixel-effect-toggle svg{color:#ff91bf;flex:none}
+.pixel-effect-toggle[aria-pressed="false"]{color:#a7b9d0;background:#14243b}
+.pixel-effect-toggle[aria-pressed="false"] svg{color:#8297b2}
+.pixel-effect-status{color:#62f5a5;font-size:10px}
+.pixel-effect-toggle[aria-pressed="false"] .pixel-effect-status{color:#9badc4}
+@media(max-width:650px){.pixel-effect-toggle{width:44px;min-width:44px;height:44px;padding:0}.pixel-effect-toggle>span{display:none}}
+@media(max-width:370px){.studio-home .v2-header-actions{gap:5px}.studio-home .v2-header-contact{padding-inline:8px;gap:5px;font-size:10px}}
+@media(max-width:900px){.builder-page .builder-header-label{display:none}}

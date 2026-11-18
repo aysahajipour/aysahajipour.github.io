@@ -1,0 +1,52 @@
+/* The configurator shares Yeksel's pixel RGB shell. Preview interiors remain industry-specific. */
+.builder-page{background:#182944;color:#f1f7ff}
+.builder-page .builder-header,.builder-page .builder-footer{background:#14213b;color:#b5c9e3;border-color:#385276}
+.builder-page .builder-header-label{color:#94b5e7}
+.builder-page .builder-header-cta{border-radius:3px;border-color:#5f7cab}
+.builder-page .builder-header-cta:hover{background:var(--brand-cyan);color:#081525;box-shadow:0 0 18px #27e6f569}
+.builder-page .builder-kicker{color:var(--brand-green);text-shadow:0 0 15px #62f5a56c}
+.builder-page .builder-intro h1 em{color:var(--brand-purple);text-shadow:0 0 21px #ad5cff65}
+.builder-page .builder-intro p{color:#b7cbe3}
+.builder-page .builder-panel,.builder-page .preview-toolbar,.builder-page .request-section{background:#203858;border-color:#425a7e;box-shadow:7px 7px 0 #4587ff1f;color:#f1f7ff}
+.builder-page .panel-head>span,.builder-page .request-top>span{color:var(--brand-cyan)}
+.builder-page .panel-head p,.builder-page .request-top p,.builder-page .request-alt,.builder-page .preview-disclaimer{color:#b2c5df}
+.builder-page .builder-panel legend,.builder-page .panel-fields>label,.builder-page .request-form label{color:#e6f2ff}
+.builder-page .panel-fields>label span{color:#9db0cf}
+.builder-page .business-option{background:#263e61;border-color:#405d85;color:#c5d8ed}
+.builder-page .business-option:hover{border-color:var(--brand-cyan);background:#18365a}
+.builder-page .business-option.active{background:#133e55;border-color:var(--brand-cyan);color:#e0fcff;box-shadow:inset 0 0 0 1px #27e6f581,0 0 18px #27e6f529}
+.builder-page .panel-fields input,.builder-page .request-form input{background:#172c49;border-color:#48648d;color:#f2f8ff}
+.builder-page .panel-fields input::placeholder,.builder-page .request-form input::placeholder{color:#8099b9}
+.builder-page .panel-fields input:focus,.builder-page .request-form input:focus{border-color:var(--brand-cyan);box-shadow:0 0 0 3px #27e6f538}
+.builder-page .style-option{border-color:#435e87;background:#253d60;color:#edf6ff}
+.builder-page .style-option.active{background:#22365e;border-color:var(--brand-purple);box-shadow:inset 4px 0 0 var(--brand-purple),0 0 15px #ad5cff2d}
+.builder-page .style-option.active strong{color:#edd8ff}
+.builder-page .style-option.active .style-swatch{outline-color:var(--brand-purple)}
+.builder-page .style-option small{color:#a2b8d2}
+.builder-page .upload-zone{background:#172a4d;border-color:#6581ad;color:#dae8ff}
+.builder-page .upload-zone:hover{background:#213b67;border-color:var(--brand-cyan)}
+.builder-page .upload-zone span,.builder-page .upload-hint{color:#a7bbd6}
+.builder-page .remove-image{color:var(--brand-cyan)}
+.builder-page .layout-options button,.builder-page .accent-default,.builder-page .reset-demo{background:#253d60;border-color:#48648d;color:#c4d5ec}
+.builder-page .layout-options button.active,.builder-page .accent-default.active{background:#173e58;border-color:var(--brand-cyan);color:#e1faff}
+.builder-page .accent-swatch.active{box-shadow:0 0 0 2px #f2f8ff,0 0 0 5px #3f5d87,0 0 18px #27e6f566}
+.builder-page .reset-demo:hover{background:#20395f;border-color:var(--brand-purple);color:#fff}
+.builder-page .preview-toolbar{color:#e2efff}
+.builder-page .preview-stage{background:#243b5c;border-color:#49658e}
+.builder-page .live-dot{background:var(--brand-green);box-shadow:0 0 0 4px #62f5a524,0 0 14px var(--brand-green)}
+.builder-page .preview-note{color:#a8bedc}
+.builder-page .tool{color:#c3d5ed}
+.builder-page .tool:hover,.builder-page .tool.active{background:#204468;color:var(--brand-cyan)}
+.builder-page .copy-tool{border-color:#526d96}
+.builder-page .preview-watermark{color:#263567;opacity:.22}
+.builder-page .request-form button{background:var(--brand-cyan);color:#081525;box-shadow:4px 4px 0 var(--brand-blue)}
+.builder-page .request-form button:hover{background:#78f3ff}
+.builder-page .request-alt a,.builder-page .request-success{color:var(--brand-green)}
+.builder-page .builder-footer a{color:#f5faff}
+.builder-page .builder-preview-jump{display:inline-flex;align-items:center;gap:9px;border-bottom:1px solid var(--brand-cyan);color:var(--brand-cyan);font-size:12px;font-weight:750;margin-top:19px;padding-bottom:5px}
+.builder-page .builder-preview-jump:hover{color:var(--brand-green);border-color:var(--brand-green)}
+.builder-page .builder-intro h1{font-size:clamp(32px,3.6vw,50px);line-height:1.4;letter-spacing:0}
+.builder-page .panel-head h2{font-size:21px}.builder-page .request-top h2{font-size:25px}
+.builder-page .business-option{font-size:11px}.builder-page .preview-disclaimer{font-size:11px}
+.builder-page .builder-kicker{color:var(--brand-pink);text-shadow:0 0 15px #ff66ac66}
+@media(max-width:600px){.builder-page .builder-intro h1{font-size:34px}}

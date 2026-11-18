@@ -1,0 +1,20 @@
+/* Clear scale: a few headlines, restrained section titles, smaller explanatory copy. */
+.studio-home h1,.studio-home h2,.studio-home h3{letter-spacing:0;font-weight:650}
+.studio-home .v2-hero h1{font-size:clamp(48px,4.8vw,70px);line-height:1.38;margin:29px 0 20px;font-weight:720}
+.studio-home .v2-hero-copy>p{font-size:15px;line-height:2.05;max-width:520px}
+.studio-home :is(.v2-work-heading h2,.v2-services-heading h2,.v2-tech h2,.v2-approach h2,.v2-about h2,.v2-contact h2){font-size:clamp(35px,3.7vw,52px);line-height:1.45}
+.studio-home .v2-faq h2,.studio-home .project-brief h2{font-size:clamp(35px,3.7vw,50px);line-height:1.48}
+.studio-home .v2-work-heading p,.studio-home .v2-services-heading p,.studio-home .v2-tech-copy>p,.studio-home .v2-about-copy>p,.studio-home .v2-contact p{font-size:14px;line-height:2.05}
+.studio-home .v2-service-row{min-height:112px}
+.studio-home .v2-service-row h3{font-size:20px;line-height:1.55}
+.studio-home .v2-service-row p{font-size:12px;line-height:1.85}
+.studio-home .v2-steps h3{font-size:20px}
+.studio-home .v2-showcase-bottom h3{font-size:clamp(26px,2.7vw,36px);line-height:1.5}
+.studio-home .v2-showcase-bottom p{font-size:12px;line-height:1.85}
+.studio-home .v2-accent-dot,.studio-home .v2-services-heading h2 span{color:var(--brand-pink);text-shadow:0 0 18px #ff66ac77}
+.studio-home .v2-about h2 em{color:var(--brand-pink);text-shadow:0 0 18px #ff66ac65}
+.studio-home .v2-logo-mark span{color:var(--brand-pink)}
+.studio-home .v2-showcase-tabs button.active{box-shadow:inset 4px 0 0 var(--brand-pink)}
+.studio-home .v2-tech-tags span:nth-child(3n){border-color:#ff66ac99;color:#ffd1e6}
+@media(max-width:800px){.studio-home .v2-hero h1{font-size:clamp(44px,7vw,58px)}.studio-home .v2-showcase-tabs button.active{box-shadow:inset 0 -4px 0 var(--brand-pink)}}
+@media(max-width:520px){.studio-home .v2-hero h1{font-size:clamp(39px,10vw,48px)}.studio-home .v2-hero-copy>p{font-size:13px}.studio-home :is(.v2-work-heading h2,.v2-services-heading h2,.v2-tech h2,.v2-approach h2,.v2-about h2,.v2-contact h2,.v2-faq h2,.project-brief h2){font-size:32px}.studio-home .v2-showcase-bottom h3{font-size:24px}.studio-home .v2-service-row h3{font-size:17px}}

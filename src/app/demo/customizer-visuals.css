@@ -1,0 +1,15 @@
+.business-preview .uploaded-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.business-preview.layout-framed .r-hero,.business-preview.layout-framed .e-hero,.business-preview.layout-framed .h-hero{margin:16px 16px 0;border-radius:12px}
+.business-preview.layout-framed .r-hero{overflow:hidden}
+.business-preview.layout-framed .e-hero>.concept-image,.business-preview.layout-framed .e-shade,.business-preview.layout-framed .h-hero>.concept-image,.business-preview.layout-framed .h-shade{border-radius:12px}
+.business-preview.layout-framed .c-hero{margin:16px;gap:32px;background:var(--c-panel);border-radius:14px;box-shadow:0 14px 28px #173f3d13}
+.business-preview.layout-framed .c-photo{border-radius:12px}
+.business-preview.layout-framed .s-hero{margin:16px;border-radius:12px;overflow:hidden;box-shadow:0 14px 28px #2b1e3517}
+.business-preview.layout-framed .e-below{padding-top:50px}
+.business-preview.layout-framed .h-booking{margin-inline:6%}
+.business-preview.has-custom-accent .r-primary,.business-preview.has-custom-accent .r-eyebrow,.business-preview.has-custom-accent .r-circle,.business-preview.has-custom-accent .r-below>span:first-child,.business-preview.has-custom-accent .r-detail-list svg{color:var(--custom-accent);border-color:var(--custom-accent)}
+.business-preview.has-custom-accent .c-nav-cta,.business-preview.has-custom-accent .c-primary,.business-preview.has-custom-accent .s-primary,.business-preview.has-custom-accent .s-ribbon,.business-preview.has-custom-accent .e-search-button,.business-preview.has-custom-accent .h-booking>span{background:var(--custom-accent);color:#fff}
+.business-preview.has-custom-accent .c-tag,.business-preview.has-custom-accent .c-shortcuts svg,.business-preview.has-custom-accent .s-kicker,.business-preview.has-custom-accent .s-nav strong span,.business-preview.has-custom-accent .e-nav strong span,.business-preview.has-custom-accent .h-below span,.business-preview.has-custom-accent .detail-heading>span{color:var(--custom-accent)}
+.business-preview.has-custom-accent .c-mark,.business-preview.has-custom-accent .c-trust-star,.business-preview.has-custom-accent .s-photo-sticker{background:color-mix(in srgb,var(--custom-accent) 20%,white);color:var(--custom-accent)}
+.business-preview.has-custom-accent .c-detail-grid svg,.business-preview.has-custom-accent .s-detail-grid svg,.business-preview.has-custom-accent .e-detail-grid svg,.business-preview.has-custom-accent .h-detail-grid svg{color:var(--custom-accent)}
+@media(max-width:700px){.preview-stage.mobile .business-preview.layout-framed .r-hero,.preview-stage.mobile .business-preview.layout-framed .e-hero,.preview-stage.mobile .business-preview.layout-framed .h-hero{margin:8px 8px 0}.preview-stage.mobile .business-preview.layout-framed .c-hero,.preview-stage.mobile .business-preview.layout-framed .s-hero{margin:8px}}

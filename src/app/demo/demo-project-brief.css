@@ -1,0 +1,21 @@
+.builder-page .demo-project-brief{grid-column:1/-1;grid-row:2;width:100%;margin-top:14px;padding:46px 0 55px;background:#192d4c;color:#f2f7ff;border:1px solid #435c82}
+.builder-page .demo-project-brief .v2-wrap{width:calc(100% - 64px);max-width:1280px}
+.builder-page .demo-project-brief .v2-section-label{border-color:#526c94;color:#b8d0ea}
+.builder-page .demo-project-brief .project-brief-copy p{color:#c6d5e8}
+.builder-page .demo-project-brief .project-brief-copy h2 em{color:#27e6f5}
+.builder-page .demo-project-brief .project-brief-steps span{border-color:#5a7196}
+.builder-page .demo-project-brief .project-brief-form{background:#203858;border-color:#536d95;box-shadow:7px 7px 0 #4587ff30;color:#f2f7ff}
+.builder-page .demo-project-brief .project-brief-form .brief-group{border-bottom-color:#4c6588}
+.builder-page .demo-project-brief .project-brief-form .brief-group:last-of-type{border-bottom:0}
+.builder-page .demo-project-brief .brief-group legend,.builder-page .demo-project-brief .brief-choice-group>strong{color:#f2f7ff}
+.builder-page .demo-project-brief .brief-group legend span{background:#334d76;border-color:#728cbe;color:#e4efff}
+.builder-page .demo-project-brief .project-brief-form label small,.builder-page .demo-project-brief .brief-choice-group small{color:#b4c4da}
+.builder-page .demo-project-brief .project-brief-form :is(input,select,textarea){background:#172c49;border-color:#4b6790;color:#f2f8ff}
+.builder-page .demo-project-brief .project-brief-form :is(input,select,textarea)::placeholder{color:#97abc7}
+.builder-page .demo-project-brief .project-priorities button{background:#203656;border-color:#61789c;color:#d6e5f8}
+.builder-page .demo-project-brief .project-priorities button.selected{background:#23506a;border-color:#27e6f5;color:#fff}
+.builder-page .demo-project-brief .project-brief-actions button[type="submit"]{background:#27e6f5;color:#102542}
+.builder-page .demo-project-brief .project-brief-actions .brief-email-action{background:transparent;color:#d7c4ff;border-color:#a189f2;box-shadow:none}
+.builder-page .demo-project-brief .project-brief-privacy{color:#a6bad4}
+@media(max-width:1160px){.builder-page .demo-project-brief{grid-row:3}}
+@media(max-width:700px){.builder-page .demo-project-brief{order:4;grid-row:auto;padding:31px 0 38px;margin-top:0}.builder-page .demo-project-brief .v2-wrap{width:calc(100% - 28px)}.builder-page .demo-project-brief .project-brief-grid{display:block}.builder-page .demo-project-brief .project-brief-copy{margin-bottom:25px}}

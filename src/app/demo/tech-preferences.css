@@ -1,0 +1,8 @@
+.builder-page .tech-preferences{border-top:1px solid #4b678d!important;padding-top:18px!important;margin-top:17px!important}
+.builder-page .tech-preferences legend span{font-size:10px;font-weight:400;color:#9db2ce}
+.builder-page .tech-preferences>p{font-size:10px;line-height:1.8;color:#afc3dd;margin:0 0 10px}
+.tech-preference-options{display:flex;flex-wrap:wrap;gap:6px;direction:ltr;justify-content:flex-end}
+.builder-page .tech-preference-options button{border:1px solid #637da2;background:#1b3150;color:#d5e7ff;padding:6px 8px;font:10px Arial,sans-serif;min-height:32px;cursor:pointer}
+.builder-page .tech-preference-options button:hover,.builder-page .tech-preference-options button[aria-pressed="true"]{border-color:#27e6f5;background:#1d566d;color:#fff}
+.builder-page .tech-preferences .tech-preference-explain{margin:11px 0 0;padding:9px;background:#1a2c49;border-right:2px solid #27e6f5;color:#c6dcf0}
+.tech-preference-explain strong{color:#71e5ef;font:700 10px Arial,sans-serif;direction:ltr}
