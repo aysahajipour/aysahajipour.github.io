@@ -27,7 +27,7 @@ export default function Capabilities() {
   return <section className="capabilities" id="capabilities" aria-labelledby="capabilities-title">
     <div className="v2-wrap">
       <div className="v2-section-label"><span>05 / WHAT I CAN DO</span><span>— توانایی‌ها</span></div>
-      <div className="capabilities-heading"><div><span className="capabilities-kicker">از رابط کاربری تا زیرساخت</span><h2 id="capabilities-title">مهارت‌هایی برای<br/><em>ساختِ یک محصول کامل.</em></h2></div><p>روی نام هر فناوری بزن تا ببینی در پروژه چه کاری انجام می‌دهد. هر حوزه بخشی از مسیر ساخت یک محصول واقعی است.</p></div>
+      <div className="capabilities-heading"><div><span className="capabilities-kicker">از رابط کاربری تا زیرساخت</span><h2 id="capabilities-title">از رابط تا سرور، <em>دست‌به‌کد.</em></h2></div><p>در پروژه‌های واقعی با این ابزارها کار کرده‌ام. روی هر نام بزن تا کاربردش را در محصول ببینی.</p></div>
       <div className="capabilities-grid">{capabilities.map(({ n, icon: Icon, eyebrow, title, detail, stack }) => <article className={`capability-card capability-card-${n}`} key={n}><div className="capability-card-top"><span>{n} / {eyebrow}</span><Icon size={22} strokeWidth={1.6}/></div><CapabilityVisual n={n}/><h3>{title}</h3><p>{detail}</p><div className="capability-tags">{stack.map(item => <button type="button" key={item} aria-expanded={openTech === item} onClick={() => setOpenTech(current => current === item ? null : item)}>{item}</button>)}</div>{openTech && stack.includes(openTech) && <div className="capability-tech-info" role="status"><strong>{openTech}</strong><span>{techDescriptions[openTech]}</span></div>}</article>)}</div>
       <a className="capabilities-cta" href="#project-brief">دربارهٔ پروژه‌ات صحبت کنیم <ArrowUpLeft size={17}/></a>
     </div>

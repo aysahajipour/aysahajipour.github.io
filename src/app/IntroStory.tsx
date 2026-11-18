@@ -10,7 +10,7 @@ const outcomes = [
 export default function IntroStory() {
   return <section className="intro-story" aria-labelledby="intro-story-title"><div className="v2-wrap">
     <div className="v2-section-label"><span>01 / THE POINT OF IT ALL</span><span>— فلسفهٔ کار</span></div>
-    <div className="intro-story-main"><div className="intro-story-title"><span>یک نگاه دقیق‌تر به وب‌سایت</span><h2 id="intro-story-title">ظاهر خوب،<br/><em>شروعِ کار است.</em></h2></div><div className="intro-story-copy"><p>یک وب‌سایت باید برای مخاطب روشن باشد و برای کسب‌وکار کار کند. طراحی، محتوا و کد را کنار هم می‌چینم تا بازدیدکننده راحت‌تر مسیرش را پیدا کند.</p><a href="#services">ببین چه می‌سازم <ArrowUpLeft size={17}/></a></div></div>
+    <div className="intro-story-main"><div className="intro-story-title"><span>یک نگاه دقیق‌تر به وب‌سایت</span><h2 id="intro-story-title">هر پیکسل، <em>با یک دلیل.</em></h2></div><div className="intro-story-copy"><p>مخاطب باید زود بفهمد اینجا چه چیزی برای اوست و قدم بعدی کدام است. متن، چیدمان و کد را دور همین مسیر می‌سازم؛ از اولین نگاه تا تماس یا خرید.</p><a href="#services">ببین چه می‌سازم <ArrowUpLeft size={17}/></a></div></div>
     <div className="intro-story-outcomes">{outcomes.map(({ n, icon: Icon, title, text }) => <div key={n}><div className="intro-story-outcome-top"><span>{n} /</span><Icon size={20} strokeWidth={1.6}/></div><h3>{title}</h3><p>{text}</p></div>)}</div>
   </div></section>;
 }
