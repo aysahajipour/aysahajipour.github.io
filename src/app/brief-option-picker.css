@@ -24,8 +24,21 @@
 .project-brief-form .brief-live-summary>span{font-size:10px;color:#62f5a5}
 .project-brief-form .brief-live-summary strong{font-size:11px;font-weight:800}
 .project-brief-form .brief-live-summary small{font-size:10px;color:#b8cce5}
+.project-brief-form .brief-extras{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:25px 29px 28px;border-bottom:1px solid #486487;background:#1a3150}
+.project-brief-form .brief-extras-heading{grid-column:1/-1;display:flex;align-items:baseline;gap:13px}
+.project-brief-form .brief-extras-heading strong{font-size:16px;color:#f2f7ff}
+.project-brief-form .brief-extras-heading span{font-size:11px;color:#aec3df}
+.project-brief-form .brief-extra-field{min-width:0}
+.project-brief-form .brief-extra-field label,.project-brief-form .brief-extra-tech>strong{display:block;margin:0 0 9px;color:#f2f7ff;font-size:12px;font-weight:750}
+.project-brief-form .brief-extra-field small{color:#adc0d8;font-size:10px;font-weight:400}
+.project-brief-form .brief-extra-field textarea{min-height:130px;height:130px}
+.project-brief-form .brief-extra-tech>p{margin:0 0 9px;color:#aec3df;font-size:10px;line-height:1.7}
+.project-brief-form .brief-extra-tech .project-priorities{gap:6px}
+.project-brief-form .brief-extra-tech .project-priorities button{min-height:32px;padding:5px 8px;font-size:10px}
 @media(min-width:900px){.project-brief-form .brief-group .brief-business-fields{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:1050px){.project-brief-form .brief-option-group-project .brief-option-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.project-brief-form .brief-extras{grid-template-columns:repeat(2,minmax(0,1fr))}.project-brief-form .brief-extra-tech{grid-column:1/-1}}
 @media(max-width:700px){.project-brief-form .brief-picker-grid{grid-template-columns:1fr}.project-brief-form .brief-option-group-contact .brief-option-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.project-brief-form .brief-extras{grid-template-columns:1fr;padding:20px;gap:18px}.project-brief-form .brief-extra-tech{grid-column:auto}.project-brief-form .brief-extras-heading{display:block}.project-brief-form .brief-extras-heading span{display:block;margin-top:4px}}
 @media(max-width:520px){.project-brief-form .brief-option-card{min-height:57px;padding:7px;gap:7px}.project-brief-form .brief-option-marker{width:26px;height:27px;font-size:9px}.project-brief-form .brief-option-text strong{font-size:11px}.project-brief-form .brief-option-card .brief-option-text small{font-size:9px}.project-brief-form .brief-option-check{width:12px}.project-brief-form .brief-option-heading>small{display:none}}
 @media(max-width:360px){.project-brief-form .brief-option-grid,.project-brief-form .brief-option-group-project .brief-option-grid,.project-brief-form .brief-option-group-contact .brief-option-grid{grid-template-columns:1fr}}

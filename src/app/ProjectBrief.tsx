@@ -111,7 +111,9 @@ export default function ProjectBrief({ demoSummary, initialSelectedTech = emptyT
   function send(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!formRef.current?.reportValidity()) return;
-    window.open(`https://wa.me/989352505353?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+    const whatsappLink = new URL(site.whatsapp);
+    whatsappLink.searchParams.set("text", message);
+    window.open(whatsappLink.toString(), "_blank", "noopener,noreferrer");
     setOpened(true);
   }
   function sendEmail() {
@@ -141,10 +143,13 @@ export default function ProjectBrief({ demoSummary, initialSelectedTech = emptyT
             <BriefOptionPicker name="budget" title="بازهٔ بودجه" value={budget} options={budgetOptions} onChange={setBudget}/>
           </div>
           <div className="brief-live-summary" aria-live="polite"><span>انتخاب‌های فعلی</span><strong>{pages} / {timeline}</strong><small>{budget}</small></div>
-          <label htmlFor="brief-references">نمونه‌سایت یا سبک مورد علاقه <small>اختیاری</small></label><textarea id="brief-references" maxLength={350} rows={2} value={references} onChange={e => setReferences(e.target.value)} placeholder="لینک نمونه‌ها یا توضیحی از رنگ و سبک دلخواهت"/>
-          <div className="brief-choice-group"><strong>فناوری مورد علاقه <small>اختیاری؛ انتخاب فنی نهایی بعد از شناخت پروژه است</small></strong><div className="project-priorities brief-tech-options">{requestedTechOptions.map(item => <button type="button" key={item} aria-pressed={selectedTech.includes(item)} className={selectedTech.includes(item) ? "selected" : ""} onClick={() => toggle(item, selectedTech, setSelectedTech)}>{item}</button>)}</div></div>
-          <label htmlFor="brief-notes">توضیحات یا محدودیت‌های دیگر <small>اختیاری</small></label><textarea id="brief-notes" maxLength={500} rows={3} value={notes} onChange={e => setNotes(e.target.value)} placeholder="مثلاً اتصال به نرم‌افزار فعلی، تاریخ رویداد، یا نیاز خاصی که بالا نبود"/>
         </fieldset>
+        <div className="brief-extras" aria-label="جزئیات تکمیلی پروژه">
+          <div className="brief-extras-heading"><strong>جزئیات تکمیلی</strong><span>اگر نمونه، سلیقه یا محدودیت خاصی داری، اینجا اضافه کن.</span></div>
+          <div className="brief-extra-field"><label htmlFor="brief-references">نمونه‌سایت یا سبک مورد علاقه <small>اختیاری</small></label><textarea id="brief-references" maxLength={350} rows={3} value={references} onChange={e => setReferences(e.target.value)} placeholder="لینک نمونه‌ها یا توضیحی از رنگ و سبک دلخواهت"/></div>
+          <div className="brief-extra-field brief-extra-tech"><strong>فناوری مورد علاقه <small>اختیاری</small></strong><p>انتخاب فنی نهایی بعد از شناخت پروژه است.</p><div className="project-priorities brief-tech-options">{requestedTechOptions.map(item => <button type="button" key={item} aria-pressed={selectedTech.includes(item)} className={selectedTech.includes(item) ? "selected" : ""} onClick={() => toggle(item, selectedTech, setSelectedTech)}>{item}</button>)}</div></div>
+          <div className="brief-extra-field"><label htmlFor="brief-notes">توضیحات یا محدودیت‌های دیگر <small>اختیاری</small></label><textarea id="brief-notes" maxLength={500} rows={3} value={notes} onChange={e => setNotes(e.target.value)} placeholder="مثلاً اتصال به نرم‌افزار فعلی، تاریخ رویداد، یا نیاز خاصی که بالا نبود"/></div>
+        </div>
         <fieldset className="brief-group"><legend><span>04</span> راه ارتباط</legend>
           <div className="brief-fields-two"><div><label htmlFor="brief-name">نام شما *</label><input id="brief-name" required minLength={2} maxLength={70} value={name} onChange={e => setName(e.target.value)} placeholder="نام و نام خانوادگی"/></div><div><label htmlFor="brief-contact">شماره یا ایمیل *</label><input id="brief-contact" required minLength={5} maxLength={100} value={contact} onChange={e => setContact(e.target.value)} placeholder="راه ارتباطی دلخواه"/></div></div>
           <BriefOptionPicker name="contact-method" title="ترجیح می‌دهی چطور با تو تماس بگیرم؟" value={contactMethod} options={contactOptions} onChange={setContactMethod} variant="contact"/>
