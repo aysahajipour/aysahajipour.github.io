@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>بادگیر | اقامتگاه بوتیک لبهٔ کویر</title>
+  <meta name="description" content="بادگیر، اقامتگاه بوتیک خشتی در لبهٔ کویر مرکزی؛ ۱۱ اتاق دور یک حیاط و یک استخر. دمو: تاریخ را انتخاب کنید، اتاق خالی را ببینید و رزرو نمایشی بسازید.">
+  <meta name="theme-color" content="#1b1f3d">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../base.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">پرش به محتوا</a>
+
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="بادگیر، صفحهٔ اول">
+        <svg class="brand-mark" width="22" height="32" viewBox="0 0 22 32" aria-hidden="true" focusable="false">
+          <path d="M3 31V9l8-7 8 7v22z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M8 31V14M11 31V14M14 31V14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">بادگیر</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle-label">منو</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="بخش‌های صفحه">
+        <ul>
+          <li><a href="#about">دربارهٔ اقامتگاه</a></li>
+          <li><a href="#rooms">اتاق‌ها</a></li>
+          <li><a href="#gallery">گالری</a></li>
+          <li><a href="#amenities">امکانات</a></li>
+          <li><a href="#around">اطراف</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title" data-sky="dusk">
+        <div class="hero-media">
+          <img class="hero-img" data-sky="dusk" data-active
+               src="../../demos/hotel-graphic.webp" width="1600" height="900"
+               alt="ایوان و استخر بی‌انتهای اقامتگاه در غروب؛ طاق خشتی با نورهای گرم و رشته‌کوه‌های بنفش در دوردست">
+          <img class="hero-img" data-sky="blue"
+               src="../../demos/hotel-v2.webp" width="1672" height="941" loading="lazy"
+               alt="ایوان‌های طاق‌دار با فانوس و بادگیر در گرگ‌ومیش، رو به بیابان و کوه، با شمشادهای گل‌دار کاغذی">
+          <img class="hero-img" data-sky="night"
+               src="../../demos/hotel-v3.webp" width="1600" height="900" loading="lazy"
+               alt="حیاط مرکزی در شب با استخر فیروزه‌ای، فانوس‌ها، نشیمن فرش‌پوش و بادگیر روشن">
+        </div>
+
+        <div class="hero-copy">
+          <p class="hero-place">لبهٔ کویر مرکزی، ۴۵ دقیقه تا یزد</p>
+          <h1 class="hero-title" id="hero-title">بادگیر</h1>
+          <p class="hero-lead">یازده اتاق خشتی دور یک حیاط و یک استخر. اینجا شب‌ها باد از برج می‌گذرد و صدای شهر نمی‌رسد.</p>
+
+          <fieldset class="sky-switch">
+            <legend class="sr-only">ساعتی از روز را برای تصویر انتخاب کنید</legend>
+            <label class="sky-option">
+              <input type="radio" name="sky" value="dusk" checked>
+              <span>غروب</span>
+            </label>
+            <label class="sky-option">
+              <input type="radio" name="sky" value="blue">
+              <span>گرگ‌ومیش</span>
+            </label>
+            <label class="sky-option">
+              <input type="radio" name="sky" value="night">
+              <span>شب</span>
+            </label>
+          </fieldset>
+          <p class="sky-caption" id="sky-caption">غروب: ایوان رو به کوه و آب ساکن استخر</p>
+        </div>
+      </section>
+
+      <section class="stay-bar-wrap" aria-labelledby="stay-title">
+        <form class="stay-bar" id="stay-form" novalidate>
+          <h2 class="stay-title" id="stay-title">تاریخ اقامت</h2>
+
+          <div class="stay-field">
+            <label for="check-in">ورود</label>
+            <input type="date" id="check-in" name="checkIn" required aria-describedby="stay-message">
+          </div>
+
+          <div class="stay-field">
+            <label for="check-out">خروج</label>
+            <input type="date" id="check-out" name="checkOut" required aria-describedby="stay-message">
+          </div>
+
+          <div class="stay-field">
+            <span class="stay-label" id="guests-label">مهمان</span>
+            <div class="stepper" role="group" aria-labelledby="guests-label">
+              <button type="button" class="stepper-btn" id="guests-minus" aria-label="یک مهمان کمتر">−</button>
+              <output class="stepper-value num" id="guests-value" for="guests-minus guests-plus">۲</output>
+              <button type="button" class="stepper-btn" id="guests-plus" aria-label="یک مهمان بیشتر">+</button>
+            </div>
+          </div>
+
+          <button class="btn btn-primary stay-submit" type="submit">نمایش اتاق‌های خالی</button>
+
+          <p class="stay-message" id="stay-message" role="status"></p>
+        </form>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <div class="about-text">
+            <h2 class="section-title" id="about-title">خانه‌ای که برای باد ساخته شده</h2>
+            <p class="about-lead">بادگیر را از خشت و کاهگل بالا برده‌ایم، همان‌طور که در این حاشیه همیشه ساخته می‌شد. برج بالای حیاط هوای شب را پایین می‌کشد و اتاق‌ها تا صبح خنک می‌مانند.</p>
+            <p>صبح‌ها چای زیر ایوان است و عصرها استخر، وقتی آفتاب از پشت کوه‌ها نارنجی می‌شود. شام را از مزرعهٔ همین ده می‌آوریم و دیگر کاری نیست جز نشستن.</p>
+          </div>
+
+          <dl class="facts">
+            <div class="fact">
+              <dt>ارتفاع از دریا</dt>
+              <dd class="num">۱٬۶۸۰ متر</dd>
+            </div>
+            <div class="fact">
+              <dt>تا یزد</dt>
+              <dd class="num">۴۵ دقیقه با خودرو</dd>
+            </div>
+            <div class="fact">
+              <dt>ورود و خروج</dt>
+              <dd class="num">از ساعت ۱۴ تا ساعت ۱۲</dd>
+            </div>
+            <div class="fact">
+              <dt>ظرفیت</dt>
+              <dd class="num">۱۱ اتاق در پنج گونه</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="rooms" id="rooms" aria-labelledby="rooms-title">
+        <div class="wrap">
+          <div class="rooms-head">
+            <h2 class="section-title" id="rooms-title">اتاق‌ها برای تاریخ شما</h2>
+            <p class="rooms-note">شب‌های پنجشنبه و جمعه ۲۰٪ گران‌ترند. قیمت‌ها برای هر شب و شامل صبحانه است.</p>
+          </div>
+          <p class="rooms-count" id="rooms-count" role="status"></p>
+          <ul class="room-list" id="room-list"></ul>
+        </div>
+      </section>
+
+      <section class="reserve" id="reserve" aria-labelledby="reserve-title">
+        <div class="wrap">
+          <h2 class="section-title" id="reserve-title" tabindex="-1">اطلاعات مهمان</h2>
+
+          <div class="reserve-grid">
+            <aside class="ticket" id="ticket" aria-live="polite">
+              <p class="ticket-empty">هنوز اتاقی انتخاب نشده. از فهرست بالا اتاق را باز کنید و «انتخاب این اتاق» را بزنید.</p>
+            </aside>
+
+            <form class="guest-form" id="guest-form" novalidate hidden>
+              <div class="field">
+                <label for="guest-name">نام و نام خانوادگی</label>
+                <input id="guest-name" name="name" type="text" autocomplete="name" aria-describedby="guest-name-error">
+                <p class="field-error" id="guest-name-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="guest-phone">شمارهٔ موبایل</label>
+                <input id="guest-phone" name="phone" type="tel" dir="ltr" inputmode="tel" autocomplete="tel" placeholder="09123456789" aria-describedby="guest-phone-error">
+                <p class="field-error" id="guest-phone-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="guest-email">ایمیل <span class="optional">(اختیاری)</span></label>
+                <input id="guest-email" name="email" type="email" dir="ltr" inputmode="email" autocomplete="email" aria-describedby="guest-email-error">
+                <p class="field-error" id="guest-email-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="guest-arrival">زمان تقریبی رسیدن</label>
+                <select id="guest-arrival" name="arrival" aria-describedby="guest-arrival-error">
+                  <option value="">انتخاب کنید</option>
+                  <option value="قبل از ساعت ۱۴">قبل از ساعت ۱۴</option>
+                  <option value="۱۴ تا ۱۸">ساعت ۱۴ تا ۱۸</option>
+                  <option value="۱۸ تا ۲۲">ساعت ۱۸ تا ۲۲</option>
+                  <option value="بعد از ساعت ۲۲">بعد از ساعت ۲۲</option>
+                </select>
+                <p class="field-error" id="guest-arrival-error"></p>
+              </div>
+
+              <div class="field field-wide">
+                <label for="guest-notes">درخواست ویژه <span class="optional">(اختیاری)</span></label>
+                <textarea id="guest-notes" name="notes" rows="3"></textarea>
+              </div>
+
+              <div class="field field-wide field-check">
+                <label class="check">
+                  <input type="checkbox" id="guest-terms" name="terms" aria-describedby="guest-terms-error">
+                  <span>قوانین لغو رزرو را خوانده‌ام: لغو تا ۴۸ ساعت قبل از ورود رایگان است.</span>
+                </label>
+                <p class="field-error" id="guest-terms-error"></p>
+              </div>
+
+              <div class="form-actions field-wide">
+                <button class="btn btn-primary" type="submit">ثبت رزرو</button>
+                <p class="form-hint">دمو است؛ اطلاعات به جایی ارسال نمی‌شود.</p>
+              </div>
+            </form>
+
+            <div class="success" id="success" tabindex="-1" hidden>
+              <h3 class="success-title">رزرو نمایشی ثبت شد</h3>
+              <p class="success-lead">این فقط پیش‌نمایش روند رزرو است؛ اقامتی رزرو نشده و پیام تأییدی ارسال نمی‌شود.</p>
+              <dl class="success-list">
+                <div><dt>کد پیگیری</dt><dd id="success-code" class="num"></dd></div>
+                <div><dt>مهمان</dt><dd id="success-guest"></dd></div>
+                <div><dt>اتاق</dt><dd id="success-room"></dd></div>
+                <div><dt>ورود</dt><dd id="success-in"></dd></div>
+                <div><dt>خروج</dt><dd id="success-out"></dd></div>
+                <div><dt>مدت و مهمان</dt><dd id="success-meta" class="num"></dd></div>
+                <div class="success-total"><dt>جمع کل</dt><dd id="success-total" class="num"></dd></div>
+              </dl>
+              <button class="btn btn-quiet" type="button" id="new-booking">رزرو تازه</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="wrap">
+          <div class="gallery-head">
+            <h2 class="section-title" id="gallery-title">از نزدیک‌تر</h2>
+            <div class="filters" role="group" aria-label="دسته‌بندی تصاویر">
+              <button type="button" class="filter" data-filter="all" aria-pressed="true">همه</button>
+              <button type="button" class="filter" data-filter="outside" aria-pressed="false">بیرون</button>
+              <button type="button" class="filter" data-filter="court" aria-pressed="false">حیاط</button>
+              <button type="button" class="filter" data-filter="pool" aria-pressed="false">استخر</button>
+            </div>
+          </div>
+
+          <ul class="gallery-grid" id="gallery-grid">
+            <li class="gallery-item gallery-wide" data-tags="court pool">
+              <button type="button" class="gallery-open" data-full="../../demos/hotel-v3.webp" data-w="1600" data-h="900"
+                      data-caption="حیاط مرکزی پس از غروب؛ استخر فیروزه‌ای میان طاق‌ها و فانوس‌ها">
+                <img src="../../demos/hotel-v3.webp" width="1600" height="900" loading="lazy"
+                     alt="حیاط مرکزی با استخر فیروزه‌ای، زیتون‌های گلدانی و فانوس‌های روشن در شب">
+              </button>
+            </li>
+            <li class="gallery-item gallery-tall" data-tags="outside">
+              <button type="button" class="gallery-open" data-full="../../demos/hotel-graphic.webp" data-w="1600" data-h="900"
+                      data-caption="طاق بزرگ ایوان رو به آسمان غروب">
+                <img class="crop-arch" src="../../demos/hotel-graphic.webp" width="1600" height="900" loading="lazy"
+                     alt="طاق خشتی بلند با دیوار سنگی و کوزهٔ سفالی در نور غروب">
+              </button>
+            </li>
+            <li class="gallery-item gallery-tall" data-tags="outside">
+              <button type="button" class="gallery-open" data-full="../../demos/hotel-v2.webp" data-w="1672" data-h="941"
+                      data-caption="ایوان‌های طاق‌دار با درهای ارسی و شمشاد گل‌دار">
+                <img class="crop-arsi" src="../../demos/hotel-v2.webp" width="1672" height="941" loading="lazy"
+                     alt="طاق‌های ایوان با درهای چوبی ارسی، فانوس آویزان و شاخه‌های بوگنویل صورتی">
+              </button>
+            </li>
+            <li class="gallery-item gallery-square" data-tags="court">
+              <button type="button" class="gallery-open" data-full="../../demos/hotel-v3.webp" data-w="1600" data-h="900"
+                      data-caption="نشیمن کنار حیاط با فرش، میز منبت و فانوس">
+                <img class="crop-lounge" src="../../demos/hotel-v3.webp" width="1600" height="900" loading="lazy"
+                     alt="نشیمن پشتی‌دار با بالش‌های منقوش، میز چوبی منبت‌کاری شده و فانوس روشن">
+              </button>
+            </li>
+            <li class="gallery-item gallery-square" data-tags="pool outside">
+              <button type="button" class="gallery-open" data-full="../../demos/hotel-v2.webp" data-w="1672" data-h="941"
+                      data-caption="استخر در گرگ‌ومیش با بازتاب طاق‌ها">
+                <img class="crop-pool" src="../../demos/hotel-v2.webp" width="1672" height="941" loading="lazy"
+                     alt="بازتاب طاق‌ها و نورهای گرم روی آب آرام استخر">
+              </button>
+            </li>
+            <li class="gallery-item gallery-wide" data-tags="outside pool">
+              <button type="button" class="gallery-open" data-full="../../demos/hotel-graphic.webp" data-w="1600" data-h="900"
+                      data-caption="استخر بی‌انتها رو به کوه‌های غروب‌زده">
+                <img class="crop-ridge" src="../../demos/hotel-graphic.webp" width="1600" height="900" loading="lazy"
+                     alt="آب استخر بی‌انتها و رشته‌کوه‌های بنفش زیر آسمان صورتی">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="amenities" id="amenities" aria-labelledby="amenities-title">
+        <div class="wrap amenities-grid">
+          <h2 class="section-title" id="amenities-title">آنچه کنار اتاق دارید</h2>
+
+          <div class="amenity-group">
+            <h3>برای تن</h3>
+            <ul>
+              <li>استخر حیاط، گرم از اردیبهشت تا آبان</li>
+              <li>حمام خزینه‌ای با نوبت‌بندی</li>
+              <li>ماساژ با روغن بادام در ایوان</li>
+            </ul>
+          </div>
+
+          <div class="amenity-group">
+            <h3>برای شب</h3>
+            <ul>
+              <li>تخت با ملحفهٔ کتان و پتوی پشمی بافت محلی</li>
+              <li>تهویهٔ بادگیر و کولر گازی بی‌صدا</li>
+              <li>فانوس و پشتی برای ایوان خصوصی</li>
+            </ul>
+          </div>
+
+          <div class="amenity-group">
+            <h3>برای روز</h3>
+            <ul>
+              <li>صبحانهٔ سنتی با نان تازه و عسل کوهی</li>
+              <li>اینترنت پرسرعت در لابی و حیاط</li>
+              <li>ترانسفر از یزد با هماهنگی قبلی</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="around" id="around" aria-labelledby="around-title">
+        <div class="wrap around-grid">
+          <h2 class="section-title" id="around-title">اطراف اقامتگاه</h2>
+          <ul class="around-list">
+            <li><span class="around-name">قنات و آب‌انبار ده</span><span class="around-dist num">۱۰ دقیقه پیاده</span></li>
+            <li><span class="around-name">کاروانسرای متروک</span><span class="around-dist num">۱۵ دقیقه با خودرو</span></li>
+            <li><span class="around-name">تپه‌های ماسه‌ای برای غروب</span><span class="around-dist num">۲۰ دقیقه با خودرو</span></li>
+            <li><span class="around-name">بازار و بافت تاریخی یزد</span><span class="around-dist num">۴۵ دقیقه با خودرو</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <p class="footer-brand">بادگیر</p>
+          <p class="footer-text">اقامتگاه بوتیک لبهٔ کویر مرکزی</p>
+        </div>
+        <address class="footer-text">
+          استان یزد، جادهٔ فرعی ده‌نو، پلاک ۱<br>
+          <span class="num">تلفن: ۰۳۵ ۳۱۰۰ ۰۰۰۰</span>
+        </address>
+        <p class="footer-text">نام، نشانی و شماره‌ها فرضی‌اند و فقط برای نمایش طراحی آمده‌اند.</p>
+      </div>
+    </footer>
+  </div>
+
+  <dialog class="room-dialog" id="room-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-body">
+      <img class="dialog-img" id="dialog-img" width="1600" height="900" alt="">
+      <div class="dialog-content">
+        <h2 class="dialog-title" id="dialog-title"></h2>
+        <p class="dialog-tagline" id="dialog-tagline"></p>
+        <p id="dialog-desc"></p>
+        <dl class="dialog-facts" id="dialog-facts"></dl>
+        <h3 class="dialog-sub">امکانات اتاق</h3>
+        <ul class="dialog-amenities" id="dialog-amenities"></ul>
+        <p class="dialog-quote num" id="dialog-quote"></p>
+        <div class="dialog-actions">
+          <button class="btn btn-primary" type="button" id="dialog-select">انتخاب این اتاق</button>
+          <button class="btn btn-quiet" type="button" id="dialog-close">بستن</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="نمایش بزرگ تصویر">
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" width="1600" height="900" alt="">
+      <figcaption class="lightbox-caption">
+        <span id="lightbox-text"></span>
+        <span class="lightbox-count num" id="lightbox-count"></span>
+      </figcaption>
+    </figure>
+    <div class="lightbox-controls">
+      <button type="button" class="lightbox-btn" id="lightbox-prev" aria-label="تصویر قبلی">‹</button>
+      <button type="button" class="lightbox-btn" id="lightbox-close" aria-label="بستن">×</button>
+      <button type="button" class="lightbox-btn" id="lightbox-next" aria-label="تصویر بعدی">›</button>
+    </div>
+  </dialog>
+</body>
+</html>

@@ -7,12 +7,12 @@ import { ArrowUpLeft, Check, ChevronLeft } from "lucide-react";
 import "./showcase-redesign.css";
 
 const items = [
-  { slug: "restaurant", n: "01", label: "رستوران", brand: "کافه ماه", eyebrow: "FOOD / RESERVATION", title: "از دیدن منو تا رزرو میز.", text: "فضای رستوران را نشان بده، منو را خوانا بچین و رزرو را یک قدم نزدیک‌تر کن.", mockTitle: "هر طعم، یک خاطره", mockText: "منو، فضا و میز دلخواهت همین‌جاست.", action: "دیدن منو", accent: "#ff9f8a", tags: ["منو", "رزرو", "لوکیشن"] },
-  { slug: "clinic", n: "02", label: "کلینیک", brand: "کلینیک آرام", eyebrow: "HEALTH / TRUST", title: "اطمینان، پیش از اولین مراجعه.", text: "خدمات، پزشکان و مسیر گرفتن نوبت را روشن و آرام کنار هم بگذار.", mockTitle: "مراقبت از همین‌جا", mockText: "خدمت مناسب را پیدا کن و نوبت بگیر.", action: "دریافت نوبت", accent: "#8ae4cf", tags: ["خدمات", "پزشکان", "نوبت"] },
-  { slug: "shop", n: "03", label: "فروشگاه", brand: "استودیو آوا", eyebrow: "COMMERCE / PRODUCT", title: "ویترینی که انتخاب را آسان می‌کند.", text: "محصول را در مرکز توجه بگذار و مسیر دیدن، مقایسه و خرید را کوتاه کن.", mockTitle: "چیزهای خوب، همین‌جا", mockText: "مجموعهٔ تازه را با سلیقهٔ خودت کشف کن.", action: "دیدن محصولات", accent: "#ff82ca", tags: ["محصول", "دسته‌بندی", "خرید"] },
-  { slug: "realestate", n: "04", label: "املاک", brand: "آیندهٔ خانه", eyebrow: "PROPERTY / DISCOVERY", title: "خانهٔ مناسب، پیدا کردن ساده‌تر.", text: "فایل‌ها را با جزئیات ضروری و جست‌وجویی کاربردی به مشتری نشان بده.", mockTitle: "جای بعدی زندگی‌ات", mockText: "محله، بودجه و سبک خانه را انتخاب کن.", action: "جست‌وجوی ملک", accent: "#9bb8ff", tags: ["جست‌وجو", "فایل ملک", "مشاوره"] },
-  { slug: "hotel", n: "05", label: "هتل", brand: "هتل آسمان", eyebrow: "TRAVEL / BOOKING", title: "از تصویر مقصد تا رزرو اقامت.", text: "حس مکان را منتقل کن و اتاق، امکانات و تاریخ رزرو را شفاف نشان بده.", mockTitle: "برای چند روز، دورتر برو", mockText: "اتاقی برای مکث و تجربه‌ای تازه.", action: "دیدن اتاق‌ها", accent: "#ffd09b", tags: ["اتاق‌ها", "امکانات", "رزرو"] },
-  { slug: "fitness", n: "06", label: "ورزش و مربیگری", brand: "مبینا کوچ", eyebrow: "FITNESS / COACHING", title: "برنامه‌ای که به حرکت تبدیل می‌شود.", text: "مربی را معرفی کن، برنامه‌ها را مقایسه‌پذیر بساز و شروع را ساده کن.", mockTitle: "قوی‌تر، با برنامهٔ خودت", mockText: "هدف را مشخص کن؛ قدم بعدی روشن است.", action: "شروع مسیر", accent: "#bb94ff", tags: ["مربی", "برنامه", "شروع"] },
+  { slug: "restaurant", n: "01", label: "رستوران", brand: "ترنج", eyebrow: "FOOD / RESERVATION", title: "از دیدن منو تا رزرو میز.", text: "فضای رستوران را نشان بده، منو را خوانا بچین و رزرو را یک قدم نزدیک‌تر کن.", mockTitle: "هر طعم، یک خاطره", mockText: "منو، فضا و میز دلخواهت همین‌جاست.", action: "دیدن منو", accent: "#ff9f8a", tags: ["منو", "رزرو", "لوکیشن"] },
+  { slug: "clinic", n: "02", label: "کلینیک", brand: "کلینیک سوسن", eyebrow: "HEALTH / TRUST", title: "اطمینان، پیش از اولین مراجعه.", text: "خدمات، پزشکان و مسیر گرفتن نوبت را روشن و آرام کنار هم بگذار.", mockTitle: "مراقبت از همین‌جا", mockText: "خدمت مناسب را پیدا کن و نوبت بگیر.", action: "دریافت نوبت", accent: "#8ae4cf", tags: ["خدمات", "پزشکان", "نوبت"] },
+  { slug: "shop", n: "03", label: "فروشگاه", brand: "آبسنگ", eyebrow: "COMMERCE / PRODUCT", title: "ویترینی که انتخاب را آسان می‌کند.", text: "محصول را در مرکز توجه بگذار و مسیر دیدن، مقایسه و خرید را کوتاه کن.", mockTitle: "چیزهای خوب، همین‌جا", mockText: "مجموعهٔ تازه را با سلیقهٔ خودت کشف کن.", action: "دیدن محصولات", accent: "#ff82ca", tags: ["محصول", "دسته‌بندی", "خرید"] },
+  { slug: "realestate", n: "04", label: "املاک", brand: "بام‌نگار", eyebrow: "PROPERTY / DISCOVERY", title: "خانهٔ مناسب، پیدا کردن ساده‌تر.", text: "فایل‌ها را با جزئیات ضروری و جست‌وجویی کاربردی به مشتری نشان بده.", mockTitle: "جای بعدی زندگی‌ات", mockText: "محله، بودجه و سبک خانه را انتخاب کن.", action: "جست‌وجوی ملک", accent: "#9bb8ff", tags: ["جست‌وجو", "فایل ملک", "مشاوره"] },
+  { slug: "hotel", n: "05", label: "هتل", brand: "بادگیر", eyebrow: "TRAVEL / BOOKING", title: "از تصویر مقصد تا رزرو اقامت.", text: "حس مکان را منتقل کن و اتاق، امکانات و تاریخ رزرو را شفاف نشان بده.", mockTitle: "برای چند روز، دورتر برو", mockText: "اتاقی برای مکث و تجربه‌ای تازه.", action: "دیدن اتاق‌ها", accent: "#ffd09b", tags: ["اتاق‌ها", "امکانات", "رزرو"] },
+  { slug: "fitness", n: "06", label: "ورزش و مربیگری", brand: "تمپو", eyebrow: "FITNESS / COACHING", title: "برنامه‌ای که به حرکت تبدیل می‌شود.", text: "مربی را معرفی کن، برنامه‌ها را مقایسه‌پذیر بساز و شروع را ساده کن.", mockTitle: "قوی‌تر، با برنامهٔ خودت", mockText: "هدف را مشخص کن؛ قدم بعدی روشن است.", action: "شروع مسیر", accent: "#bb94ff", tags: ["مربی", "برنامه", "شروع"] },
 ] as const;
 
 export default function HomeShowcase() {
@@ -33,7 +33,9 @@ export default function HomeShowcase() {
               <h3>{active.title}</h3>
               <p>{active.text}</p>
               <div className="concept-tags">{active.tags.map(tag => <span key={tag}><Check size={12}/>{tag}</span>)}</div>
-              <Link href={`/demo?business=${active.slug}`} className="concept-cta">باز کردن دموی {active.label} و شخصی‌سازی <ArrowUpLeft size={18}/></Link>
+              {/* Full static demo lives in public/showcase; a plain anchor avoids the Next router. */}
+              <a href={`/showcase/${active.slug}/index.html`} className="concept-cta">دیدن سایت کامل {active.label} <ArrowUpLeft size={18}/></a>
+              <Link href={`/demo?business=${active.slug}`} className="concept-cta concept-cta-secondary">شخصی‌سازی همین سبک با دموساز</Link>
             </div>
             <div className={`concept-browser concept-${active.slug}`} aria-label={`نمای گرافیکی سایت ${active.label}`}>
               <div className="concept-browser-bar"><span><i/><i/><i/></span><small>{active.brand}</small><b>↗</b></div>

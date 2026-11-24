@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>آبسنگ | فروشگاه آنلاین مراقبت از پوست</title>
+  <meta name="description" content="آبسنگ؛ فروشگاه آنلاین مراقبت از پوست با سرم، کرم و شوینده‌هایی که با آب چشمه و عصاره‌ی گیاهان ایرانی ساخته شده‌اند. ارسال رایگان بالای ۱٬۵۰۰٬۰۰۰ تومان.">
+  <meta name="theme-color" content="#2a1a10">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232a1a10'/%3E%3Cpath d='M6 26V20h6v-5h6v-5h8v16z' fill='%23d9c2a0'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&amp;display=swap">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">رفتن به محتوای اصلی</a>
+
+  <!-- Shared stone-pore texture used by every illustrated product -->
+  <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="pores" width="24" height="24" patternUnits="userSpaceOnUse">
+        <circle cx="4" cy="6" r="1.4" fill="#000" fill-opacity=".16"/>
+        <circle cx="15" cy="4" r=".8" fill="#000" fill-opacity=".14"/>
+        <circle cx="20" cy="15" r="1.8" fill="#000" fill-opacity=".12"/>
+        <circle cx="9" cy="18" r="1" fill="#000" fill-opacity=".16"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="آبسنگ، بازگشت به بالای صفحه">
+        <svg class="brand__mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+          <path d="M3 29v-7h8v-6h8v-7h10v20z" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">آبسنگ</span>
+      </a>
+
+      <nav class="site-nav" aria-label="فهرست اصلی">
+        <ul class="site-nav__list">
+          <li><a href="#shelf">قفسه</a></li>
+          <li><a href="#routines">روتین‌ها</a></li>
+          <li><a href="#promise">قول ما</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-btn" type="button" id="open-cart" aria-haspopup="dialog" aria-controls="cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+          <path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8zM9 8V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="cart-btn__label">سبد</span>
+        <span class="cart-btn__badge num" id="cart-count" aria-hidden="true">۰</span>
+        <span class="sr-only" id="cart-live" aria-live="polite" aria-atomic="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="hero-title">پوستت را نرم کن،<br>مثل سنگ زیر آب.</h1>
+          <p class="hero__lede">
+            آبسنگ از آب چشمه‌ی سنگی لار و گیاهان کوهستانی،
+            سرم و کرم‌هایی می‌سازد که روی پوست سبک می‌نشینند و بوی دارو نمی‌دهند.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#shelf">دیدن قفسه</a>
+            <a class="btn btn--text" href="#routines">روتین صبح و شب</a>
+          </div>
+          <ul class="hero__facts" aria-label="مزایای خرید">
+            <li>ارسال رایگان بالای <span class="num">۱٬۵۰۰٬۰۰۰</span> تومان</li>
+            <li>تحویل تهران در <span class="num">۲۴</span> ساعت</li>
+            <li>بازگشت کالا تا <span class="num">۷</span> روز</li>
+          </ul>
+        </div>
+
+        <figure class="hero__figure">
+          <img
+            src="../../demos/shop-v2.webp"
+            width="1672"
+            height="941"
+            fetchpriority="high"
+            alt="چهار بطری شیشه‌ای کهربایی با درپوش مشکی و یک شیشه‌ی کرم باز، روی پله‌های سنگ تراورتن کنار شاخه‌ی زیتون">
+        </figure>
+      </div>
+    </section>
+
+    <section class="shelf" id="shelf" aria-labelledby="shelf-title">
+      <div class="container">
+        <div class="shelf__head">
+          <h2 class="section-title" id="shelf-title">قفسه‌ی آبسنگ</h2>
+          <p class="shelf__note">دوازده محصول؛ هر کدام با یک کار مشخص و فهرست کوتاه مواد.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="chips" id="chips" role="group" aria-label="دسته‌بندی محصولات">
+            <button class="chip" type="button" data-cat="all" aria-pressed="true">همه</button>
+            <button class="chip" type="button" data-cat="serum" aria-pressed="false">سرم</button>
+            <button class="chip" type="button" data-cat="cream" aria-pressed="false">کرم و بالم</button>
+            <button class="chip" type="button" data-cat="cleanser" aria-pressed="false">شوینده</button>
+            <button class="chip" type="button" data-cat="mist" aria-pressed="false">میست و تونر</button>
+          </div>
+
+          <div class="toolbar__tools">
+            <div class="field field--inline">
+              <label for="q">جست‌وجو</label>
+              <input id="q" type="search" placeholder="مثلاً نیاسینامید" autocomplete="off" enterkeyhint="search">
+            </div>
+            <div class="field field--inline">
+              <label for="sort">مرتب‌سازی</label>
+              <select id="sort">
+                <option value="new">جدیدترین</option>
+                <option value="asc">ارزان‌ترین</option>
+                <option value="desc">گران‌ترین</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+
+        <ul class="grid" id="grid" aria-label="فهرست محصولات"></ul>
+
+        <div class="empty-results" id="no-results" hidden>
+          <h3>چیزی با این مشخصات پیدا نشد</h3>
+          <p>عبارت جست‌وجو را کوتاه‌تر کنید یا همه‌ی دسته‌ها را ببینید.</p>
+          <button class="btn btn--solid" type="button" id="reset-filters">پاک کردن فیلترها</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="routines" id="routines" aria-labelledby="routines-title">
+      <div class="container">
+        <h2 class="section-title" id="routines-title">دو روتین، بیشتر از این لازم نیست</h2>
+
+        <div class="routines__grid">
+          <article class="routine routine--day">
+            <img
+              src="../../demos/shop-v3.webp"
+              width="1600"
+              height="900"
+              loading="lazy"
+              alt="شیشه‌ی قطره‌چکان شفاف، ظرف کرم و بطری پمپی کرم‌رنگ روی تخته‌سنگ تراورتن کنار آب و یک برگ سبز">
+            <div class="routine__body">
+              <h3>روتین صبح؛ سبک و آبرسان</h3>
+              <p>شست‌وشو با ژل ملایم، چند قطره سرم و لایه‌ای نازک کرم. سه مرحله و کمتر از دو دقیقه.</p>
+              <button class="btn btn--solid" type="button" data-jump="serum">سرم‌ها را ببینید</button>
+            </div>
+          </article>
+
+          <article class="routine routine--night">
+            <img
+              src="../../demos/shop-graphic.webp"
+              width="1600"
+              height="900"
+              loading="lazy"
+              alt="بطری قطره‌چکان، بطری پمپی و دو شیشه‌ی کرم یاسی با درپوش مسی کنار طاق سنگی و شاخه‌ی شکوفه">
+            <div class="routine__body">
+              <h3>روتین شب؛ ترمیم تا صبح</h3>
+              <p>پاک‌کننده‌ی شیری، سرم ویتامین و ماسک شبانه‌ای که تا صبح روی پوست می‌ماند.</p>
+              <button class="btn btn--solid" type="button" data-jump="cream">کرم‌ها را ببینید</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise" id="promise" aria-labelledby="promise-title">
+      <div class="container promise__inner">
+        <h2 class="section-title" id="promise-title">قول ما</h2>
+        <div class="promise__text">
+          <p>فرمول هر محصول فقط از <strong class="num">۸</strong> تا <strong class="num">۱۲</strong> ماده ساخته می‌شود و فهرست کاملش روی بسته و همین‌جا نوشته شده است.</p>
+          <p>اگر پوستتان با محصولی کنار نیامد، تا هفت روز پول را برمی‌گردانیم؛ بدون سؤال اضافه.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">آبسنگ</p>
+      <p>فروشگاه نمایشی؛ محصولات، قیمت‌ها و سفارش‌ها فرضی‌اند.</p>
+    </div>
+  </footer>
+
+  <!-- Quick view -->
+  <dialog class="qv" id="qv" aria-labelledby="qv-title">
+    <div class="qv__layout">
+      <button class="icon-btn qv__close" type="button" data-close aria-label="بستن نگاه سریع">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      </button>
+      <div class="qv__art" id="qv-art"></div>
+      <form class="qv__info" id="qv-form" novalidate>
+        <p class="qv__cat" id="qv-cat"></p>
+        <h2 class="qv__title" id="qv-title"></h2>
+        <p class="qv__blurb" id="qv-blurb"></p>
+        <p class="qv__inci"><span>مواد اصلی:</span> <span id="qv-inci"></span></p>
+
+        <fieldset class="options">
+          <legend>رنگ بطری: <span id="qv-color-name"></span></legend>
+          <div class="swatches" id="qv-colors"></div>
+        </fieldset>
+
+        <fieldset class="options">
+          <legend>حجم</legend>
+          <div class="sizes" id="qv-sizes"></div>
+        </fieldset>
+
+        <div class="qv__buy">
+          <p class="qv__price num" id="qv-price"></p>
+          <button class="btn btn--solid" type="submit">افزودن به سبد</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Cart drawer, checkout and success live in one dialog -->
+  <dialog class="drawer" id="cart" aria-labelledby="cart-title">
+    <div class="drawer__head">
+      <h2 id="cart-title" tabindex="-1">سبد خرید</h2>
+      <button class="icon-btn" type="button" data-close aria-label="بستن سبد">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      </button>
+    </div>
+
+    <section class="drawer__view" id="view-cart" aria-label="کالاهای سبد">
+      <div class="ship" id="ship">
+        <p class="ship__text" id="ship-text"></p>
+        <div class="ship__track" aria-hidden="true"><span class="ship__bar" id="ship-bar"></span></div>
+      </div>
+
+      <ul class="lines" id="cart-list"></ul>
+
+      <div class="cart-empty" id="cart-empty" hidden>
+        <svg viewBox="0 0 120 80" width="120" height="80" aria-hidden="true" focusable="false">
+          <rect x="0" y="56" width="120" height="24" fill="#d9c2a0"/>
+          <rect x="0" y="56" width="120" height="24" fill="url(#pores)"/>
+          <rect x="44" y="20" width="32" height="36" rx="6" fill="none" stroke="#2a1a10" stroke-width="2" stroke-dasharray="4 4"/>
+        </svg>
+        <h3>سبد شما خالی است</h3>
+        <p>قفسه را ببینید؛ پرفروش‌ترین سرم‌ها همان بالاست.</p>
+        <button class="btn btn--solid" type="button" id="empty-action">رفتن به قفسه</button>
+      </div>
+
+      <div class="drawer__foot" id="cart-foot">
+        <p class="subtotal"><span>جمع کالاها</span> <strong class="num" id="subtotal"></strong></p>
+        <p class="subtotal subtotal--sub"><span>هزینه‌ی ارسال</span> <span class="num" id="shipping-fee"></span></p>
+        <button class="btn btn--solid btn--block" type="button" id="go-checkout">ادامه و ثبت سفارش</button>
+      </div>
+    </section>
+
+    <form class="drawer__view" id="checkout" hidden novalidate aria-labelledby="checkout-title">
+      <h3 class="drawer__sub" id="checkout-title" tabindex="-1">اطلاعات تحویل</h3>
+
+      <div class="field" data-field="name">
+        <label for="f-name">نام و نام خانوادگی</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" aria-describedby="e-name">
+        <p class="field__error" id="e-name" role="alert"></p>
+      </div>
+
+      <div class="field" data-field="phone">
+        <label for="f-phone">شماره‌ی موبایل</label>
+        <input id="f-phone" name="phone" type="tel" inputmode="numeric" dir="ltr" autocomplete="tel" placeholder="09123456789" aria-describedby="h-phone e-phone">
+        <p class="field__hint" id="h-phone">با ۰۹ شروع شود و ۱۱ رقم باشد.</p>
+        <p class="field__error" id="e-phone" role="alert"></p>
+      </div>
+
+      <div class="field" data-field="address">
+        <label for="f-address">نشانی کامل</label>
+        <textarea id="f-address" name="address" rows="3" autocomplete="street-address" aria-describedby="e-address"></textarea>
+        <p class="field__error" id="e-address" role="alert"></p>
+      </div>
+
+      <p class="subtotal"><span>مبلغ قابل پرداخت</span> <strong class="num" id="pay-total"></strong></p>
+
+      <div class="drawer__actions">
+        <button class="btn btn--solid" type="submit">ثبت سفارش</button>
+        <button class="btn btn--text" type="button" id="back-to-cart">بازگشت به سبد</button>
+      </div>
+    </form>
+
+    <section class="drawer__view done" id="view-done" hidden aria-labelledby="done-title">
+      <svg class="done__mark" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true" focusable="false">
+        <path d="M4 60V44h14V32h14V20h28v40z" fill="#d9c2a0"/>
+        <path d="M20 24l8 8 16-18" fill="none" stroke="#2a1a10" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 id="done-title" tabindex="-1">سفارش نمایشی ثبت شد</h3>
+      <p id="done-text"></p>
+      <button class="btn btn--solid" type="button" id="done-close">بازگشت به فروشگاه</button>
+    </section>
+  </dialog>
+
+  <script src="../base.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
